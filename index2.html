@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<title>Jgrowl-jqueryui by bardware</title>
+
+		<link rel="stylesheet" href="gustavohenke/jquery-ui-bootstrap/jquery.ui.theme.css" type="text/css"/>
+		<link rel="stylesheet" href="stanlemon/jGrowl/jquery.jgrowl.css" type="text/css"/>			
+		</head>
+	<body>
+
+		<div id="clicker">click here for jGrowl-popup</div>
+		
+		<br><br><a href="index.html">test with original jQuery-ui design</a>
+		<br><br><a rel="author" href="https://plus.google.com/110621726095417101123?rel=author" class="menu">me on Google+</a>
+
+		<script type="text/javascript" src="jquery-ui-1.10.2/jquery-1.9.1.js"></script>
+		<script type="text/javascript" src="jquery-ui-1.10.2/ui/jquery-ui.js"></script>
+		<script type="text/javascript" src="stanlemon/jGrowl/jquery.jgrowl.js"></script>
+		<script type="text/javascript">
+			$(document).ready( function() {
+				$('#clicker').on( 'click', function() {
+					$.jGrowl("This notification will live a little longer.", { life: 1000, sticky: true , themeState:'highlight'});
+				});
+			});
+
+		</script>
+
+	</body>
+</html>
